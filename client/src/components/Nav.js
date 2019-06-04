@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Nav = () => {
     return(
         <NavBar>
-            <img src={logo} alt="" style={{ width: "150px", height: '75px'}}/>
+            <h1>Paladyn Zyro</h1>
             <Links>
                 <NavLink to="/">Home</NavLink>
                 <a href="">Merch</a>
