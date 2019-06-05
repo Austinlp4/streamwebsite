@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-class Merch extends Component{
+class Videos extends Component{
     state = {
 
     };
@@ -19,4 +19,4 @@ class Merch extends Component{
     }
 }
 
-export default Merch;
+export default Videos;
