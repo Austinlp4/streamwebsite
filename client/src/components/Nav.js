@@ -9,7 +9,7 @@ const Nav = () => {
             <img src={logo} alt="" style={{ width: '300px', height: 'auto' }}/>
             <Links>
                 <NavLink to="/">Home</NavLink>
-                <NavLink to="/videos">Videos</NavLink>
+                <NavLink to="/pictures">Pictures</NavLink>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
             </Links>
