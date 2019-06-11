@@ -78,6 +78,7 @@ const Chat = styled.iframe`
     width: 100%;
     max-width: 500px;
     height: 700px;
+    border: none;
 `;
 const InfoCont = styled.div`
     display: flex;
