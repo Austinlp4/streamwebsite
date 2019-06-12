@@ -15,9 +15,9 @@ const Home = () => {
             <Content>
                 <iframe className="stream" title="Mixer stream" src="https://mixer.com/embed/player/Paladyn_Zyro" frameborder="0"></iframe>
             </Content>
-            <div style={{ width: '30%' }}>
+            <ChatContainer>
                 <Chat title="Mixer chat" src="https://mixer.com/embed/chat/Paladyn_Zyro" frameborder="0"></Chat>
-            </div>
+            </ChatContainer>
             </ContentContainer> 
             <InfoCont>
                 <Card>
@@ -55,6 +55,13 @@ const Home = () => {
     )
 }
 
+const ChatContainer = styled.div`
+    width: 30%;
+    @media(max-width: 1445px){
+        width: 100%;
+    }
+`;
+
 const Head = styled.header`
     background: black;
     margin-bottom: 100px;
@@ -67,18 +74,28 @@ const Content = styled.div`
         height: 700px;
         max-width: 1200px;
     }
+    @media(max-width: 1445px){
+        width: 100%;
+    }
 `;
 const ContentContainer = styled.div`
     display: flex;
     width: 100%;
     jusify-content: center;
     margin-bottom: 100px;
+    @media(max-width: 1445px){
+        flex-direction: column;
+    }
 `;
 const Chat = styled.iframe`
     width: 100%;
     max-width: 500px;
     height: 700px;
     border: none;
+    @media(max-width: 1445px){
+        height: 300px;
+        max-width: 84.25%;
+    }
 `;
 const InfoCont = styled.div`
     display: flex;
@@ -89,8 +106,9 @@ const InfoCont = styled.div`
 `;
 const Card = styled.div`
     width: 20%;
+    min-width: 300px;
     box-shadow: 5px 5px 5px lightgrey;
-    height: 400px;
+    height: 425px;
     p{
         text-align: left;
         width: 70%;
