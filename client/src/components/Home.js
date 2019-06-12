@@ -9,7 +9,7 @@ const Home = () => {
     return(
         <div style={{ paddingTop: '70px' }}>
             <Head>
-                <img src={header} alt="" style={{ height: '700px' }}/>
+                <img src={header} alt=""/>
             </Head>
              <ContentContainer>              
             <Content>
@@ -65,6 +65,15 @@ const ChatContainer = styled.div`
 const Head = styled.header`
     background: black;
     margin-bottom: 100px;
+    img {
+        height: 700px;
+    }
+    @media(max-width: 1445px){
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
 `;
 
 const Content = styled.div`

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const About = () => {
     return(
-        <div style={{ paddingTop: '70px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+        <Container >
             <h1>About Me</h1>
             <Content>
                 Many of you might not know, but I am Paladyn Zyro. You can also call me Austin.
@@ -32,13 +32,24 @@ const About = () => {
               See you there!
  
             </Content>
-        </div>
+        </Container>
     )
 }
+
+const Container = styled.div`
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+`;
 
 const Content = styled.p`
     width: 40%;
     line-height: 2.5;
+    @media(max-width: 1164px){
+        width: 80%;
+    }
 `;
 
 export default About;

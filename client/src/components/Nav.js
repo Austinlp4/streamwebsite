@@ -26,6 +26,7 @@ const NavBar = styled.div`
     position: fixed;
     width: 100%;
     background: white;
+    
 `;
 const Links = styled.div`
     display: flex;
@@ -36,5 +37,7 @@ const Links = styled.div`
         text-decoration: none;
         color: grey;
     }
+    min-width: 500px;
+    
 `;
 export default Nav;
